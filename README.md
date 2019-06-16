@@ -1,4 +1,4 @@
-# AccountantPlus Web Server [![Build Status](https://travis-ci.org/NjengaSaruni/Accountant-Web-Server.svg?branch=develop)](https://travis-ci.org/NjengaSaruni/Accountant-Web-Server) [![Coverage Status](https://coveralls.io/repos/github/NjengaSaruni/Accountant-Web-Server/badge.svg?branch=develop)](https://coveralls.io/github/NjengaSaruni/Accountant-Web-Server?branch=develop)
+
 This repository contains the backend for the AccountantPlus web service. 
 
 ## How to run the server
@@ -14,7 +14,7 @@ This repository contains the backend for the AccountantPlus web service.
 2. ### Without docker (Linux | Ubuntu)
 
      
-     $ git clone https://github.com/NjengaSaruni/Accountant-Web-Server.git
+     $ git clone https://github.com/kevinamos/financial_manager.git
     
      $ cd Accountant-Web-Server    
     
