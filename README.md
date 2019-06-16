@@ -58,4 +58,4 @@ This repository contains the backend for the AccountantPlus web service.
      $ ./manage.py createsuperuser
      $ ./manage.py runserver
      
- Maintained by [Peter Njenga](https://twitter.com/NjengaSaruni)
+ 
