@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/riverlearn-196110/acp-api', '.' ]
+images:
+- 'gcr.io/riverlearn-196110/acp-api'

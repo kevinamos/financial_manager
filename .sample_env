@@ -1,0 +1,5 @@
+AP_DB_USER=app
+AP_DB_PORT=5432
+AP_DB_HOST=localhost
+AP_DB_PASSWORD=app
+AP_DB_NAME=ap

@@ -1,0 +1,34 @@
+language: python
+
+# Supported Python versions
+python:
+  - "3.6"
+
+services:
+  - postgresql
+
+addons:
+  postgresql: '9.4'
+  apt:
+    packages:
+      - postgresql-server-dev-9.4
+
+
+env:
+  - DJANGO_SETTINGS_MODULE="config.settings"
+# Install dependencies
+install:
+  - pip install -r requirements/base.txt
+  - pip install coveralls
+before_script:
+ - psql -c "create database accountant;" -U postgres
+
+# Run tests
+script:
+  - python manage.py migrate
+  - pytest --cov-report term-missing --cov=app -p no:warnings
+  - coverage report
+
+# Generate coverage report
+after_success:
+  - coveralls

@@ -1,0 +1,10 @@
+# Accounts
+
+from accounts.models import *
+user = User.objects.first()
+
+# Testing
+
+from django.test import Client
+c = Client()
+response = c.post('/api/v1/rest-auth/registration/',{'firstname': 'John', 'last_name': 'Otieno', 'password1': 'acpas!@#','password2': 'acpas!@#', 'username': 'john@gmail.com', 'email'})
